@@ -1,9 +1,12 @@
 import Profile from './Profile';
 import Statistics from './Statistics';
 import FriendList from './FriendList';
+import Transactions from './Transactions';
+
 import user from '../Tema1-json/user.json';
 import data from '../Tema1-json/data.json';
 import friends from '../Tema1-json/friends.json';
+import transactions from '../Tema1-json/transactions.json';
 
 export const App = () => {
   // console.log(data.id);
@@ -41,6 +44,8 @@ export const App = () => {
       <Statistics title="Upload stats" stats={data} />
 
       <FriendList friends={friends} />
+
+      <Transactions transactions={transactions} />
     </div>
   );
 };

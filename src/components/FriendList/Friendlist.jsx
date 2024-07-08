@@ -30,6 +30,7 @@ function FriendList({ friends }) {
 }
 
 FriendList.propTypes = {
+  friends: PropTypes.array,
   friend: PropTypes.object,
 };
 
