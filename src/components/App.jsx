@@ -1,7 +1,9 @@
 import Profile from './Profile';
 import Statistics from './Statistics';
+import FriendList from './FriendList';
 import user from '../Tema1-json/user.json';
 import data from '../Tema1-json/data.json';
+import friends from '../Tema1-json/friends.json';
 
 export const App = () => {
   // console.log(data.id);
@@ -37,6 +39,8 @@ export const App = () => {
         stats={user.stats}
       />
       <Statistics title="Upload stats" stats={data} />
+
+      <FriendList friends={friends} />
     </div>
   );
 };

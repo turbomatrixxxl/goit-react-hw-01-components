@@ -1,5 +1,6 @@
 .statistics {
   background-color: white;
+  border-radius: 8px;
   display: flex;
   flex-direction: column;
   /* gap: 30px; */
@@ -33,6 +34,7 @@
 
 .item:nth-child(1) {
   background-color: rgb(79, 159, 185);
+  border-bottom-left-radius: 8px;
 }
 
 .item:nth-child(2) {
@@ -49,6 +51,7 @@
 
 .item:nth-child(5) {
   background-color: rgb(156, 154, 16);
+  border-bottom-right-radius: 8px;
 }
 
 .label {
