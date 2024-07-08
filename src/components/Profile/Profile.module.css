@@ -1,0 +1,26 @@
+.profile {
+  align-items: center;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  height: fit-content;
+  justify-content: center;
+  width: 400px;
+}
+
+.description {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  justify-content: center;
+}
+
+.avatar {
+  border: 2px solid green;
+  border-radius: 50%;
+  height: 150px;
+  object-fit: cover;
+  width: 150px;
+}
