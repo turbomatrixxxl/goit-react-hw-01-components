@@ -1,5 +1,7 @@
 import Profile from './Profile';
+import Statistics from './Statistics';
 import user from '../Tema1-json/user.json';
+import data from '../Tema1-json/data.json';
 
 export const App = () => {
   // console.log(user);
@@ -12,15 +14,19 @@ export const App = () => {
   // console.log(user.stats.views);
   // console.log(user.stats.likes);
 
+  console.log(data);
+
   return (
     <div
       style={{
-        height: '100vh',
+        padding: '30px 0',
         display: 'flex',
         justifyContent: 'center',
         alignItems: 'center',
         fontSize: 40,
         color: '#010101',
+        flexDirection: 'column',
+        gap: '40px',
       }}
     >
       <Profile
@@ -30,6 +36,7 @@ export const App = () => {
         avatar={user.avatar}
         stats={user.stats}
       />
+      <Statistics title="Upload stats" stats={data} />
     </div>
   );
 };
