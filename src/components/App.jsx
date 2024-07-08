@@ -10,7 +10,9 @@ export const App = () => {
         color: '#010101',
       }}
     >
-      React homework Radu
+      <p>React homework Radu</p>
+      <button>butt</button>
+      <span>abc</span>
     </div>
   );
 };
