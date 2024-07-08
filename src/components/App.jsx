@@ -4,7 +4,7 @@ import user from '../Tema1-json/user.json';
 import data from '../Tema1-json/data.json';
 
 export const App = () => {
-  // console.log(user);
+  // console.log(data.id);
   // console.log(user.username);
   // console.log(user.tag);
   // console.log(user.location);
@@ -14,7 +14,7 @@ export const App = () => {
   // console.log(user.stats.views);
   // console.log(user.stats.likes);
 
-  console.log(data);
+  // console.log(data);
 
   return (
     <div

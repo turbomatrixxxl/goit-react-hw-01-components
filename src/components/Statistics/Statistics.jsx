@@ -16,7 +16,16 @@ function Statistics({ title, stats }) {
         <h2 className={styles.title}>{title}</h2>
         <ul className={styles.statList}>
           {stats.map(stat => {
-            return <Item item={stat} />;
+            // console.log(stat.id);
+
+            return (
+              <Item
+                key={stat.id}
+                id={stat.id}
+                label={stat.label}
+                percentage={stat.percentage}
+              />
+            );
           })}
         </ul>
       </section>
@@ -26,7 +35,8 @@ function Statistics({ title, stats }) {
 
 Statistics.propTypes = {
   title: PropTypes.string,
-  stats: PropTypes.array,
+  stats: PropTypes.array.isRequired,
+  stat: PropTypes.object,
 };
 
 export default Statistics;
